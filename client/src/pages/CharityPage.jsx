@@ -1,12 +1,12 @@
-import React from 'react'
-import DPNavbar from '../components/DPNavbar'
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const CharityPage = () => {
   return (
     <div>
-      <DPNavbar />
+      <Navbar />
     </div>
   );
-}
+};
 
-export default CharityPage
+export default CharityPage;

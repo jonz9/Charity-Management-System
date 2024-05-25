@@ -12,6 +12,7 @@ function Hero() {
     justifyContent: "center",
     alignItems: "center",
     color: "white", // Adjust text color as needed
+    position: "sticky",
   };
 
   return (
