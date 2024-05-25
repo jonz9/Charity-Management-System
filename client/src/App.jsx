@@ -1,12 +1,22 @@
-import React from "react";
+import React from 'react';
 import './index.css'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import DonationComponent from './components/DonationComponent';
 
-const App = () => {
-  return (
-    <div>
-      <h1 className="underline font-bold">Hello World</h1>
-    </div>
-  );
-};
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <Hero />
+        <DonationComponent/>
+        <Footer />
+      </div>
+    );
+  }
+}
 
 export default App;
