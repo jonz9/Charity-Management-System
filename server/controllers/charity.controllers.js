@@ -33,7 +33,7 @@ const deleteCharity = async (req, res) => {
     const { id } = req.params;
     const charity = await Charity.findByIdAndDelete(id);
 
-    if (!product) {
+    if (!charity) {
       return res.status(404).json({ message: "Charity not found" });
     }
 

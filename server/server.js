@@ -1,12 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const Charity = require("./models/charity.model");
+const cors = require("cors");
 
 const app = express();
+
 
 const charityRoute = require("./routes/charity.route");
 
 // middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
