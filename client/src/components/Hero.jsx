@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Hero() {
-    return (
-        <nav>
-            <p>HERO + BG</p>
-        </nav>
-    );
+  return (
+    <nav>
+      <p>HERO + BG</p>
+    </nav>
+  );
 }
 
 export default Hero;
