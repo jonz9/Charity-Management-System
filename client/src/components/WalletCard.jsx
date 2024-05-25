@@ -10,16 +10,16 @@ const WalletCard = () => {
         if (window.ethereum && window.ethereum.isMetaMask) {
             console.log('MetaMask Here!');
 
-            window.ethereum.request({ method: 'eth_requestAccounts'})
-            .then(result => {
-                accountChangedHandler(result[0]);
-                setConnButtonText('Wallet Connected');
-                
-            })
-            .catch(error => {
-                setErrorMessage(error.message);
-            
-            });
+            window.ethereum.request({ method: 'eth_requestAccounts' })
+                .then(result => {
+                    accountChangedHandler(result[0]);
+                    setConnButtonText('Wallet Connected');
+
+                })
+                .catch(error => {
+                    setErrorMessage(error.message);
+
+                });
 
         } else {
             console.log('Need to install MetaMask');
@@ -38,7 +38,7 @@ const WalletCard = () => {
 
     window.ethereum.on('accountsChanged', accountChangedHandler);
     window.ethereum.on('chainChanged', chainChangedHandler);
-    
+
     const toggleBalanceVisibility = () => {
         setIsBalanceVisible(!isBalanceVisible);
     }
