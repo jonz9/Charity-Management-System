@@ -10,9 +10,7 @@ function Navbar() {
         </a>
         <div className="grid grid-flow-col gap-2">
           <button className="p-3 border-2 border-black rounded-xl border-spacing-2 bg-slate-400 hover:bg-slate-500">
-            <button>
               <h3>Register Charity</h3>
-            </button>
           </button>
           <button className="p-3 border-2 border-black rounded-xl border-spacing-2 bg-slate-400 hover:bg-slate-500">
             <h3>
