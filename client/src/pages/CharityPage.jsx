@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from '../components/Navbar';
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const CharityPage = () => {
   return (
@@ -7,6 +7,6 @@ const CharityPage = () => {
       <Navbar />
     </div>
   );
-}
+};
 
-export default CharityPage
+export default CharityPage;
