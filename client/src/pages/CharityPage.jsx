@@ -15,12 +15,12 @@ const CharityPage = () => {
     loadCharities();
   }, []);
 
-  console.log(dataSet);
+  // console.log(dataSet);
 
   // console.log(dataSet[0].address);
 
   return (
-    <div>
+    <div className="flex flex-col h-fit max-w-screen bg-white">
       <Navbar />
       <CharityDisplay />
     </div>

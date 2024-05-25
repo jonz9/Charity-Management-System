@@ -3,7 +3,7 @@ import Logo from "../assets/Logo.png";
 
 function Navbar() {
   return (
-    <nav className="flex flex-col bg-[#4542E2] px-10 fixed z-10 w-full">
+    <nav className="flex flex-col bg-[#4542E2] px-10 relative z-10 w-full">
       <div className="flex flex-row items-center justify-between text-white">
         <a href="/">
           <img src={Logo} alt="logo" className="w-50 h-20 m-3 cursor-pointer" />
