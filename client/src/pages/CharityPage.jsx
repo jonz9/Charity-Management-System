@@ -17,6 +17,8 @@ const CharityPage = () => {
 
   console.log(dataSet);
 
+  // console.log(dataSet[0].address);
+
   return (
     <div>
       <Navbar />
