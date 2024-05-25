@@ -1,22 +1,13 @@
-import React from 'react';
-import './index.css'
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import DonationComponent from './components/DonationComponent';
+import React from "react";
+import "./index.css";
+import HomePage from "./pages/HomePage";
 
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <Hero />
-        <DonationComponent/>
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
+};
 
 export default App;
