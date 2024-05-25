@@ -1,5 +1,19 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const (getCharity) = require('../controllers');
+const {
+  getCharities,
+  getCharity,
+  createCharity,
+  deleteCharity,
+} = require("../controllers/charity.controllers");
 
-router.get('/', getCharity);
+router.get("/", getCharities);
+
+router.get("/:id", getCharity);
+
+router.post("/", createCharity);
+
+router.delete("/:id", deleteCharity);
+
+
+module.exports = router;
