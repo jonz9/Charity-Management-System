@@ -1,10 +1,10 @@
 import React from 'react'
-import DPNavbar from '../components/DPNavbar'
+import Navbar from '../components/Navbar';
 
 const CharityPage = () => {
   return (
     <div>
-      <DPNavbar />
+      <Navbar />
     </div>
   );
 }
