@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div className="h-fit max-w-screen flex flex-col bg-white">
       <Navbar />
       <Hero />
       <DonationComponent />
