@@ -11,7 +11,7 @@ function Hero() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    color: "white", // Adjust text color as needed
+    color: "white", 
     position: "sticky",
   };
 
