@@ -1,0 +1,3 @@
+Chaincode definition for chaincode 'fabcar', version '1.0', sequence '1' on channel 'channel1' approval status by org:
+Charity10: true
+Donor10: true
