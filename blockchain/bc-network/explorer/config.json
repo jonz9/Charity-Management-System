@@ -1,0 +1,9 @@
+{
+    "network-configs": {
+      "akb": {
+        "name": "test_akb",
+        "profile": "/opt/explorer/app/platform/fabric/connection-profile/test_akb.json"
+      }
+    },
+    "license": "Apache-2.0"
+}

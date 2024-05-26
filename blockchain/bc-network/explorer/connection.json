@@ -1,0 +1,92 @@
+{
+  "name": "test_akb",
+  "version": "1.0.0",
+  "clients": {
+    "Charity10": {
+      "organization": "Charity10",
+      "connection": {
+        "timeout": {
+          "peer": {
+            "endorser": "300"
+          }
+        }
+      }
+    },
+    "Donor10": {
+      "organization": "Donor10",
+      "connection": {
+        "timeout": {
+          "peer": {
+            "endorser": "300"
+          }
+        }
+      }
+    }
+  },
+  "organizations": {
+    "Charity10": {
+      "mspid": "Charity10",
+      "peers": [
+        "charity10node.Charity10"
+      ],
+      "certificateAuthorities": [
+        "CA8"
+      ],
+      "users": []
+    },
+    "Donor10": {
+      "mspid": "Donor10",
+      "peers": [
+        "ServiceProvider.Donor10"
+      ],
+      "certificateAuthorities": [
+        "CA9"
+      ],
+      "users": []
+    }
+  },
+  "peers": {
+    "charity10node.Charity10": {
+      "url": "grpcs://localhost:305",
+      "tlsCACerts": {
+        "path": "./../organizations/client/Charity10/clients/node_1/tls/ca.crt"
+      },
+      "grpcOptions": {
+        "ssl-target-name-override": "charity10node.Charity10",
+        "hostnameOverride": "charity10node.Charity10"
+      }
+    },
+    "ServiceProvider.Donor10": {
+      "url": "grpcs://localhost:307",
+      "tlsCACerts": {
+        "path": "./../organizations/client/Donor10/clients/node_1/tls/ca.crt"
+      },
+      "grpcOptions": {
+        "ssl-target-name-override": "ServiceProvider.Donor10",
+        "hostnameOverride": "ServiceProvider.Donor10"
+      }
+    }
+  },
+  "certificateAuthorities": {
+    "CA8": {
+      "url": "https://localhost:302",
+      "caName": "CA8",
+      "httpOptions": {
+        "verify": false
+      },
+      "tlsCACerts": {
+        "path": "./../organizations/client/Charity10/clients/node_1/tls/tlscacerts/tls-localhost-302-CA8.pem"
+      }
+    },
+    "CA9": {
+      "url": "https://localhost:303",
+      "caName": "CA9",
+      "httpOptions": {
+        "verify": false
+      },
+      "tlsCACerts": {
+        "path": "./../organizations/client/Donor10/clients/node_1/tls/tlscacerts/tls-localhost-303-CA9.pem"
+      }
+    }
+  }
+}

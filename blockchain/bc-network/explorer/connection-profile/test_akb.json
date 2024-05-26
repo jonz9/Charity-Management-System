@@ -1,0 +1,75 @@
+{
+  "name": "test_akb",
+  "version": "1.0.0",
+  "client": {
+    "tlsEnable": true,
+    "adminCredential": {
+      "id": "exploreradmin",
+      "password": "test"
+    },
+    "enableAuthentication": true,
+    "organization": "Donor10",
+    "caCredential": {
+      "id": "admin",
+      "password": "adminpw"
+    },
+    "connection": {
+      "timeout": {
+        "peer": {
+          "endorser": "300"
+        },
+        "orderer": "300"
+      }
+    }
+  },
+  "channels": {
+    "channel1": {
+      "peers": {
+        "ServiceProvider.Donor10": {}
+      }
+    }
+  },
+  "organizations": {
+    "Donor10": {
+      "mspid": "Donor10",
+      "peers": ["ServiceProvider.Donor10"],
+      "signedCert": {
+        "path": "/tmp/crypto/client/Donor10/users/Admin@Donor10/msp/signcerts/cert.pem"
+      },
+      "adminPrivateKey": {
+        "path": "/tmp/crypto/client/Donor10/users/Admin@Donor10/msp/keystore/priv_sk"
+      }
+    }
+  },
+  "peers": {
+    "ServiceProvider.Donor10": {
+      "url": "grpcs://ServiceProvider.Donor10:307",
+      "tlsCACerts": {
+        "path": "/tmp/crypto/client/Donor10/clients/node_1/tls/ca.crt"
+      },
+      "signedCert": {
+        "path": "/tmp/crypto/client/Donor10/users/Admin@Donor10/msp/signcerts/cert.pem"
+      },
+      "adminPrivateKey": {
+        "path": "/tmp/crypto/client/Donor10/users/Admin@Donor10/msp/keystore/priv_sk"
+      },
+      "grpcOptions": {
+        "ssl-target-name-override": "ServiceProvider.Donor10",
+        "hostnameOverride": "ServiceProvider.Donor10"
+      }
+    }
+  },
+  "certificateAuthorities": {
+    "CA7": {
+      "url": "https://CA7:301",
+      "caName": "CA7",
+      "httpOptions": {
+        "verify": false
+      },
+      "tlsCACerts": {
+        "path": "/tmp/crypto/client/Donor10/clients/node_1/tls/tlscacerts/tls-localhost-301-CA7.pem"
+      }
+    }
+  },
+  "wallet": "/opt/explorer/wallet"
+}
