@@ -34,7 +34,7 @@ function Navbar() {
       {isModalOpen && (
         <Modal2 closeModal={closeModal}>
           {/* Your modal content goes here */}
-          {/* For now, let's just display a message */}
+          {/*WOOOOOOOOOOOOOOO*/}
           <p>This is a blank modal!</p>
         </Modal2>
       )}
