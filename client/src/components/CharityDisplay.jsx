@@ -37,7 +37,7 @@ const CharityDisplay = () => {
           <li
             key={index}
             onClick={() => handleCharityClick(charity)}
-            className="bg-gray-300 hover:bg-gray-500 hover:cursor-pointer transition duration-800 h-60 gap-5 border rounded-3xl p-5 flex flex-col justify-center items-center"
+            className="bg-gray-300 hover:bg-gray-500 hover:cursor-pointer transition duration-800 h-60 gap-5 border-2 border-black shadow-4xl rounded-3xl p-5 flex flex-col justify-center items-center"
           >
             <div className="flex flex-col border rounded-xl justify-center items-center bg-white p-5 w-40 h-40">
               <img
